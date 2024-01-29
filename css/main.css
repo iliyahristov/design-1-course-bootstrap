@@ -1,0 +1,41 @@
+*{
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar-nav > li:hover{
+    background-color: white;
+    border-bottom: 1px black solid;
+    color: black;
+}
+
+.navbar-nav > li {
+    transition: background-color 0.5s, border-bottom 0.5s, color 0.5s;
+}
+
+.aside-container{
+    border: 1px solid red;
+    animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+    0% {border: 1px solid red;}
+    50% {border: 1px solid transparent;}
+    100% {border: 1px solid red;}
+}
+
+.card {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fadeIn 1s 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
